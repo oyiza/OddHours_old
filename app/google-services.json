@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "599748057615",
+    "project_id": "oddhours-11f0b",
+    "storage_bucket": "oddhours-11f0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599748057615:android:1915ee7c5b77613450e17a",
+        "android_client_info": {
+          "package_name": "com.example.oddhours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599748057615-v0eqqsbru23o6um25sl2d216lmraq4jh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oddhours",
+            "certificate_hash": "225f7b6bda0295c533be0502c666057404ddd298"
+          }
+        },
+        {
+          "client_id": "599748057615-a1r1ps6rba6h5gcspn6cjpk033hrlut0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZtigKm-XjKjbcQXPIGvWbPVWpDEdtNpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599748057615-a1r1ps6rba6h5gcspn6cjpk033hrlut0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
