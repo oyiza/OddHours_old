@@ -23,29 +23,21 @@ public class MainActivity extends AppCompatActivity {
         mLoginPassword = (EditText) findViewById(R.id.editTextPassword);
 
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (getLoginUserNameOrEmail().isEmpty() || getLoginPassword().isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Please enter both username/email and password to login", Toast.LENGTH_LONG).show();
-                }else if (getLoginUserNameOrEmail().equalsIgnoreCase("a") && getLoginPassword().equals("a")) {
-                    Intent HomeIntent = new Intent(MainActivity.this, HomeActivity.class);
-                    startActivity(HomeIntent);
-                    Toast.makeText(MainActivity.this, "You are logged in, Welcome!!", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Sorry, username/email and password incorrect", Toast.LENGTH_LONG).show();
-                }
+        btnLogin.setOnClickListener(v -> {
+            if (getLoginUserNameOrEmail().isEmpty() || getLoginPassword().isEmpty()) {
+                Toast.makeText(MainActivity.this, "Please enter both username/email and password to login", Toast.LENGTH_LONG).show();
+            }else if (getLoginUserNameOrEmail().equalsIgnoreCase("a") && getLoginPassword().equals("a")) {
+                Intent HomeIntent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(HomeIntent);
+                Toast.makeText(MainActivity.this, "You are logged in, Welcome!!", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Sorry, username/email and password incorrect", Toast.LENGTH_LONG).show();
             }
         });
 
         Button btnGoogleSignIn = (Button) findViewById(R.id.btnGoogleSignIn);
-        btnGoogleSignIn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Sorry, google sign in is not yet implemented.. bear with me", Toast.LENGTH_LONG).show();
-            }
+        btnGoogleSignIn.setOnClickListener(v -> {
+            Toast.makeText(MainActivity.this, "Sorry, google sign in is not yet implemented.. bear with me", Toast.LENGTH_LONG).show();
         });
     }
 
