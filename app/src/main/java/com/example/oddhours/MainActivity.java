@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             if (getLoginUserNameOrEmail().isEmpty() || getLoginPassword().isEmpty()) {
                 Toast.makeText(MainActivity.this, "Please enter both username/email and password to login", Toast.LENGTH_LONG).show();
             }else if (getLoginUserNameOrEmail().equalsIgnoreCase("a") && getLoginPassword().equals("a")) {
-//                Intent HomeIntent = new Intent(MainActivity.this, HomeActivity.class);
-//                startActivity(HomeIntent);
+                Intent HomeIntent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(HomeIntent);
                 Toast.makeText(MainActivity.this, "You are logged in, Welcome!!", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(MainActivity.this, "Sorry, username/email and password incorrect", Toast.LENGTH_LONG).show();

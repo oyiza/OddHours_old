@@ -7,4 +7,7 @@
     <string name="login_email_or_username_hint">Email or UserName</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="btnLogin">Login</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
